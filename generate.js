@@ -80,4 +80,10 @@ function generateMetadata() {
 }
 
 function generateHidden() {
+    const meta = {
+        "name":  name,
+        "description": description,
+        "image": `ipfs://${CID}/replace with the name of your hidden image.png`
+      };
+      
 }
