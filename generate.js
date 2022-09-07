@@ -37,4 +37,18 @@ fs_extra.emptyDirSync("./metadata")
 hidden ? generateHidden() : generateMetadata();
 
 function generateMetadata() {
+    for(let i=0; i<collection_size; i++){
+        let jstring = fs.readFileSync("./attributes.json", "utf-8");
+        let traits = JSON.parse(jstring)
+        let edition = network == "eth" ? i+1 : i;
+        const metas = network == "eth" ?
+        {
+          "name":  `${name} #${edition}`,
+          "description": description,
+          "image": `ipfs://${CID}/${edition}.png`,
+          "edition": edition,
+          "attributes": traits
+        }
+    
+      }
 }
