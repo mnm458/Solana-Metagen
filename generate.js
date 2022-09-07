@@ -71,12 +71,10 @@ function generateMetadata() {
             "creators": creators
           }
         }
-      
         fs.writeFileSync(
           `metadata/${edition+'.json'}`,
           JSON.stringify(metas, null, 2)
         );
-      
         console.log(`${(edition)+'.json'} Created!`);
       }
 }
