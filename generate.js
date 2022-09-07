@@ -77,6 +77,6 @@ function generateMetadata() {
           JSON.stringify(metas, null, 2)
         );
       
-
+        console.log(`${(edition)+'.json'} Created!`);
       }
 }
