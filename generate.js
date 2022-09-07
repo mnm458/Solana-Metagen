@@ -91,4 +91,5 @@ function generateHidden() {
         JSON.stringify(meta, null, 2)
       );
 
+      console.log(`Hidden metadata created!`);
 }
