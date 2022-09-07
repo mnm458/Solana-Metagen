@@ -78,3 +78,6 @@ function generateMetadata() {
         console.log(`${(edition)+'.json'} Created!`);
       }
 }
+
+function generateHidden() {
+}
