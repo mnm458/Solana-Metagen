@@ -50,5 +50,28 @@ function generateMetadata() {
           "attributes": traits
         }
     
+        :
+    
+        {
+          "name":  `${name} #${edition}`,
+          "symbol": symbol,
+          "description": description,
+          "seller_fee_basis_points": fee_basis, // Define how much % you want from secondary market sales 1000 = 10%
+          "image": `${edition}.png`,
+          "edition": edition,
+          "attributes": traits,
+          "properties": {
+            "files": [
+              {
+                "uri": `${edition}.png`,
+                "type": "image/Replace with your image type"
+              }
+            ],
+            "category": "image",
+            "creators": creators
+          }
+        }
+      
+
       }
 }
