@@ -85,5 +85,10 @@ function generateHidden() {
         "description": description,
         "image": `ipfs://${CID}/replace with the name of your hidden image.png`
       };
-      
+
+      fs.writeFileSync(
+        `metadata/hidden.json`,
+        JSON.stringify(meta, null, 2)
+      );
+
 }
