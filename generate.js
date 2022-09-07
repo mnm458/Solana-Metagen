@@ -12,6 +12,14 @@ const symbol = "Your collection symbol";
 const description = "Your collection description";
 const fee_basis = 1000; // Define how much % you want from secondary market sales 1000 = 10%
 
+
+/*
+  --------------- ONLY VALID FOR SOLANA METADATA ----------------
+
+  A collection can have multiple creators, the shares value indicates the % of the earnings an address will get from secondary market sales
+  if you put more than 1 creator remember that the sum of all their fees must be 100
+*/
+
 const creators = [
     //Creator 1 Example
     {
