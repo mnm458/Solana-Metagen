@@ -33,3 +33,5 @@ const creators = [
     },
   ]
   
+fs_extra.emptyDirSync("./metadata")
+hidden ? generateHidden() : generateMetadata();
