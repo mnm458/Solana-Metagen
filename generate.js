@@ -72,6 +72,11 @@ function generateMetadata() {
           }
         }
       
+        fs.writeFileSync(
+          `metadata/${edition+'.json'}`,
+          JSON.stringify(metas, null, 2)
+        );
+      
 
       }
 }
